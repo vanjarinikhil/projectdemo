@@ -31,7 +31,7 @@ jobs:
       env:
         ECR_EGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: github-sample
-        IMAGE_TAG: sample_image
+        IMAGE_TAG: nikhil_img-Photoroom.png-Photoroom
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/SECR_REPOSITORY:$IMAGE_TAG
